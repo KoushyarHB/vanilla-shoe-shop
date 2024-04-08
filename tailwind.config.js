@@ -6,6 +6,9 @@ export default {
       width: {
         428: "428px",
       },
+      fontSize: {
+        xxs: "0.625rem",
+      },
     },
   },
   plugins: [],
