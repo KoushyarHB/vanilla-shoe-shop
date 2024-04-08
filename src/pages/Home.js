@@ -1,4 +1,4 @@
-import Home from "@/templates/Home";
+import { Home } from "@/templates/Home/index";
 import { El } from "@/utils";
 import { Layout } from "@/layout/layout";
 
