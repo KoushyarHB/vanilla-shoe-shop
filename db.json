@@ -2,9 +2,10 @@
   "users": [
     {
       "id": 1,
-      "username": "ehsan",
-      "email": "ehsan77@gmail.com",
-      "password": "1234ehsan"
+      "name": "Koushyar",
+      "email": "koushyar.heidari@gmail.com",
+      "password": "1234koushyar",
+      "image": "./src/assets/img/profile-image/profile-image.jpg"
     }
   ],
   "Products": [
