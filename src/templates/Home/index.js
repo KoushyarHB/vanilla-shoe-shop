@@ -1,6 +1,7 @@
 import { El } from "@/utils";
 import { Profile } from "@/components/home/profile";
 import { getUser } from "@/library/api/users";
+import { Search } from "@/components/home/search";
 
 export const Home = () => {
   const profileElement = El({
@@ -12,6 +13,6 @@ export const Home = () => {
   return El({
     element: "div",
     className: "w-428 flex flex-col",
-    children: [profileElement],
+    children: [profileElement, Search()],
   });
 };
