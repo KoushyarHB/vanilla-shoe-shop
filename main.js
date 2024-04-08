@@ -1,4 +1,4 @@
 import "./src/styles/index.css";
-import { App } from "./src/app";
+import { Router } from "./src/routes/router";
 
-document.querySelector("#app").append(App());
+Router().resolve();
