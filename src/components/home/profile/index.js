@@ -40,11 +40,11 @@ export const Profile = (user) => {
           El({
             element: "img",
             className: "mr-4",
-            src: "./src/assets/img/Alert.svg",
+            src: "./src/assets/img/profile-icons/Alert.svg",
           }),
           El({
             element: "img",
-            src: "./src/assets/img/Heart.svg",
+            src: "./src/assets/img/profile-icons/Heart.svg",
           }),
         ],
       }),
