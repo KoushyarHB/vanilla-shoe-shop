@@ -30,11 +30,11 @@ export const Footer = () => {
 
   return El({
     element: "div",
-    className: "w-428 px-12 pt-3 pb-4",
+    className: "w-428 pt-3",
     children: [
       El({
         element: "div",
-        className: "flex justify-between",
+        className: "flex justify-between px-6",
         children: footerElements,
       }),
     ],

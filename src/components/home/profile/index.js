@@ -4,7 +4,7 @@ export const Profile = (user) => {
   return El({
     element: "div",
     id: "profile",
-    className: "w-428 px-6 py-4 flex justify-between",
+    className: "w-428 pb-4 flex justify-between",
     children: [
       El({
         element: "div",
