@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_URL } from "./config";
+import { BASE_URL } from "@/localization/constants/apiConfig";
 
 export const getUser = async (id) => {
   try {
