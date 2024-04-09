@@ -8,7 +8,7 @@ export const BrandFilters = () => {
   });
   return El({
     element: "div",
-    className: "flex overflow-scroll scrollbar-hide",
+    className: "flex overflow-scroll scrollbar-hide mb-6",
     children: filterButtons,
   });
 };
