@@ -10,3 +10,18 @@
 body {
   font-family: "inter";
 }
+
+@layer base {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.selected {
+  background-color: #343a40;
+  color: white;
+}
