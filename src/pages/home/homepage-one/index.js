@@ -6,7 +6,7 @@ const HomePage1 = () => {
   document.title = "Shoea";
   return El({
     element: "div",
-    className: "px-6 py-4",
+    className: "w-428 px-6 py-4 border",
     children: [Layout(Home())],
   });
 };

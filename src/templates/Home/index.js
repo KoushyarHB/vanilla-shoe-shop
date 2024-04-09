@@ -5,6 +5,7 @@ import { Search } from "@/components/home/search";
 import { Brands } from "@/components/home/brands";
 import { ProductFilters } from "@/components/home/product-filters";
 import { BrandFilters } from "@/components/home/brand-filters";
+import { Products } from "@/components/home/products";
 
 export const Home = () => {
   const profileElement = El({
@@ -15,13 +16,14 @@ export const Home = () => {
   });
   return El({
     element: "div",
-    className: "w-428 flex flex-col",
+    className: "flex flex-col",
     children: [
       profileElement,
       Search(),
       Brands(),
       ProductFilters(),
       BrandFilters(),
+      Products(),
     ],
   });
 };
