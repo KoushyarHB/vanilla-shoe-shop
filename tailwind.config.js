@@ -5,6 +5,13 @@ export default {
     extend: {
       width: {
         428: "428px",
+        182: "182px",
+        142: "142px",
+      },
+      height: {
+        784: "784px",
+        182: "182px",
+        142: "142px",
       },
       fontSize: {
         xxs: "0.625rem",
