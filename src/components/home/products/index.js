@@ -5,6 +5,7 @@ import { renderProducts } from "./renderProducts";
 export const Products = () => {
   const elem = El({
     element: "div",
+    id: "productsAtHome",
     className:
       "grid grid-cols-2 gap-4 justify-items-stretch h-784 overflow-y-scroll scrollbar-hide mb-10",
   });
