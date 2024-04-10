@@ -1,10 +1,14 @@
 import { El } from "@/utils";
 import { filterButtons } from "./createFilterButtons";
 import { handleFilterButtonsStyle } from "./handleFilterButtonsStyle";
+import { handleFilterButtonAction } from "./handleFilterButtonAction";
 
 export const BrandFilters = () => {
   filterButtons.forEach((filterButton) => {
     filterButton.addEventListener("click", (e) => handleFilterButtonsStyle(e));
+  });
+  filterButtons.forEach((filterButton) => {
+    filterButton.addEventListener("click", (e) => handleFilterButtonAction(e));
   });
   return El({
     element: "div",
