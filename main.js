@@ -1,4 +1,4 @@
 import "./src/styles/index.css";
-import { Router } from "./src/routes";
+import { router } from "./src/routes";
 
-Router().resolve();
+router.resolve();
