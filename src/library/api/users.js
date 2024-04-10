@@ -30,3 +30,15 @@ export const getProductById = async (id) => {
     throw error;
   }
 };
+
+export const getProductsByBrandName = async (name) => {
+  const baseQuery = `${BASE_URL}/products`;
+  const queryString = name === "ALL" ? baseQuery : baseQuery + `?brand=${name}`;
+  try {
+    const response = await axios.get(queryString);
+    return response.data;
+  } catch (error) {
+    console.error("Error getting data:", error);
+    throw error;
+  }
+};
