@@ -10,7 +10,6 @@ export const Products = () => {
   });
 
   getProducts().then((res) => {
-    console.log(res);
     renderProducts(elem, res);
   });
 
