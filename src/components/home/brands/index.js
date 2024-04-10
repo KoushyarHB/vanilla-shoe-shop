@@ -1,5 +1,6 @@
 import { El } from "@/utils";
 import { brandNames } from "@/localization/constants/brandNames";
+import { Link } from "@/components/link";
 
 export const Brands = () => {
   const brands = [...brandNames, "More"];
@@ -11,7 +12,8 @@ export const Brands = () => {
         element: "div",
         className: "flex flex-col items-center gap-3 mb-7",
         children: [
-          El({
+          Link({
+            href: `/brands/${brandName}`,
             element: "button",
             className:
               "flex justify-center items-center bg-[#ECECEC] w-16 h-16 rounded-full",
