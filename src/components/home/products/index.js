@@ -7,7 +7,7 @@ export const Products = () => {
     element: "div",
     id: "productsAtHome",
     className:
-      "grid grid-cols-2 gap-4 justify-items-stretch h-784 overflow-y-scroll scrollbar-hide mb-10",
+      "grid grid-cols-2 gap-4 justify-items-stretch max-h-784 overflow-y-scroll scrollbar-hide mb-10",
   });
 
   getProducts().then((res) => {
