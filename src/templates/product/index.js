@@ -14,12 +14,28 @@ export function Product(data) {
 }
 
 function renderProductPage(element, response) {
-  console.log(response);
-  console.log(element);
   const page = El({
     element: "div",
-    className: "flex flex-col",
+    className: "flex flex-col relative",
     children: [
+      El({
+        element: "button",
+        className: "absolute top-8 left-4",
+        children: [
+          El({
+            element: "span",
+            className: "icon-[ep--back] text-2xl",
+          }),
+        ],
+        eventListener: [
+          {
+            event: "click",
+            callback: () => {
+              window.history.back();
+            },
+          },
+        ],
+      }),
       El({
         element: "img",
         className: "h-96",
@@ -46,8 +62,8 @@ function renderProductPage(element, response) {
                     element: "button",
                     children: [
                       El({
-                        element: "img",
-                        src: "./src/assets/img/profile-icons/Heart.svg",
+                        element: "span",
+                        className: "icon-[ph--heart-light] text-2xl",
                       }),
                     ],
                   }),
@@ -175,22 +191,33 @@ function renderProductPage(element, response) {
                   }),
                   El({
                     element: "div",
-                    className: "bg-[#ECECEC] py-2 rounded-full",
+                    className:
+                      "flex items-center bg-[#ECECEC] py-2 rounded-full",
                     children: [
                       El({
                         element: "button",
                         className: "font-bold px-4 rounded-full",
-                        innerText: "-",
+                        children: [
+                          El({
+                            element: "span",
+                            className: "flex items-center icon-[ep--minus]",
+                          }),
+                        ],
                       }),
                       El({
                         element: "span",
                         className: "font-bold px-3",
-                        innerText: "2",
+                        innerText: "0",
                       }),
                       El({
                         element: "button",
                         className: "font-bold px-4 rounded-full",
-                        innerText: "+",
+                        children: [
+                          El({
+                            element: "span",
+                            className: "flex items-center icon-[ep--plus]",
+                          }),
+                        ],
                       }),
                     ],
                   }),
@@ -217,14 +244,30 @@ function renderProductPage(element, response) {
                   El({
                     element: "span",
                     className: "text-lg font-bold",
-                    innerText: "$ 240.00",
+                    innerText: "$ 0.00",
                   }),
                 ],
               }),
               El({
                 element: "button",
                 className: "bg-black text-white px-16 rounded-full shadow-lg",
-                innerText: "Add to Cart",
+                children: [
+                  El({
+                    element: "div",
+                    className: "flex items-center gap-2",
+                    children: [
+                      El({
+                        element: "span",
+                        className: "icon-[solar--bag-4-outline] text-md",
+                        style: "color: white",
+                      }),
+                      El({
+                        element: "span",
+                        innerText: "Add to Cart",
+                      }),
+                    ],
+                  }),
+                ],
               }),
             ],
           }),
