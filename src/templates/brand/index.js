@@ -10,7 +10,7 @@ export function Brand(data) {
     children: [
       El({
         element: "button",
-        innerText: "back",
+        className: "flex items-center",
         eventListener: [
           {
             event: "click",
@@ -22,7 +22,7 @@ export function Brand(data) {
         children: [
           El({
             element: "span",
-            className: "icon-[ic--outline-shopping-cart]",
+            className: "icon-[ep--back] text-2xl",
           }),
         ],
       }),
