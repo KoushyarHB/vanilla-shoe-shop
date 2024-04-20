@@ -1,5 +1,5 @@
 import { El } from "@/utils";
-import { Footer } from "./footer";
+import { ActionBar } from "./action-bar";
 
 export function Layout(main) {
   return El({
@@ -9,7 +9,7 @@ export function Layout(main) {
         element: "main",
         children: [main],
       }),
-      Footer(),
+      ActionBar(),
     ],
   });
 }
