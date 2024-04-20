@@ -25,7 +25,7 @@ export const renderProduct = (obj) => {
           El({
             element: "span",
             className:
-              "text-xl font-bold mb-2 overflow-hidden overflow-ellipsis whitespace-nowrap",
+              "name text-xl font-bold mb-2 overflow-hidden overflow-ellipsis whitespace-nowrap",
             innerText: obj.name,
           }),
           El({
