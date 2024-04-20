@@ -1,4 +1,5 @@
 import { El } from "@/utils";
+import { Link } from "@/components/link";
 
 export const Profile = (user) => {
   return El({
@@ -42,8 +43,10 @@ export const Profile = (user) => {
             className: "mr-4",
             src: "./src/assets/img/profile-icons/Alert.svg",
           }),
-          El({
+          Link({
+            href: `/wishlist`,
             element: "img",
+            className: "cursor-pointer",
             src: "./src/assets/img/profile-icons/Heart.svg",
           }),
         ],
