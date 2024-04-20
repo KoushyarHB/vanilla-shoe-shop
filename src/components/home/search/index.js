@@ -1,4 +1,5 @@
 import { El } from "@/utils";
+import { router } from "@/routes";
 
 export const Search = () => {
   return El({
@@ -9,6 +10,14 @@ export const Search = () => {
         element: "input",
         className: "w-full bg-[#FAFAFA] rounded py-2 px-3 pl-10",
         placeholder: "Search",
+        eventListener: [
+          {
+            event: "focus",
+            callback: () => {
+              router.navigate("/search");
+            },
+          },
+        ],
       }),
       El({
         element: "img",
