@@ -5,10 +5,10 @@ import { handleFilterButtonAction } from "./handleFilterButtonAction";
 
 export const BrandFilters = () => {
   filterButtons.forEach((filterButton) => {
-    filterButton.addEventListener("click", (e) => handleFilterButtonsStyle(e));
-  });
-  filterButtons.forEach((filterButton) => {
-    filterButton.addEventListener("click", (e) => handleFilterButtonAction(e));
+    filterButton.addEventListener("click", (e) => {
+      handleFilterButtonsStyle(e);
+      handleFilterButtonAction(e);
+    });
   });
   return El({
     element: "div",
