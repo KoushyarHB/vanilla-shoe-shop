@@ -10,6 +10,7 @@
     "db": "npx json-server --watch db.json"
   },
   "devDependencies": {
+    "@iconify-json/fluent": "^1.1.52",
     "@iconify-json/ph": "^1.1.12",
     "@iconify/tailwind": "^0.1.4",
     "autoprefixer": "^10.4.19",
@@ -22,8 +23,10 @@
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/solar": "^1.1.9",
     "axios": "^1.6.8",
+    "js-cookie": "^3.0.5",
     "json-server": "^0.17.4",
     "navigo": "^8.11.1",
+    "swiper": "^11.1.1",
     "vite-jsconfig-paths": "^2.0.1"
   }
 }
