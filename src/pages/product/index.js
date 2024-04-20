@@ -5,7 +5,7 @@ const ProductPage = (data) => {
   document.title = "Product Page";
   return El({
     element: "div",
-    className: "w-428 border",
+    className: "w-428 overflow-y-scroll scrollbar-hide border",
     children: [Product(data)],
   });
 };
